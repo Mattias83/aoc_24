@@ -9,7 +9,7 @@ def main():
         zip(*[line.split("   ") for line in lines]),
     )
 
-    # Calculate differnce and adds them togheter.
+    # Calculate difference and adds them togheter.
     total_difference = sum(
         abs(left - right) for left, right in zip(left_list, right_list)
     )
