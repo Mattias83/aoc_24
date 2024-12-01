@@ -3,13 +3,13 @@ def main():
     with open("puzzle_input.txt", "r") as pz:
         lines = pz.read().splitlines()
 
-    # reads in left_list & right_list and sorts them.
+    # Reads in left_list & right_list and sorts them.
     left_list, right_list = map(
         lambda lst: sorted(map(int, lst)),
         zip(*[line.split("   ") for line in lines]),
     )
 
-    # calculate differnce and adds them togheter.
+    # Calculate differnce and adds them togheter.
     total_difference = sum(
         abs(left - right) for left, right in zip(left_list, right_list)
     )
