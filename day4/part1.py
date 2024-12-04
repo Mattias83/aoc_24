@@ -56,7 +56,9 @@ def find_xmas(row: int, col: int, dir_row: int, dir_col: int) -> bool:
 
 
 def count_xmas_in_directions(row: int, col: int) -> int:
-    """Counts all 'XMAS' that starts at given position in all directions"""
+    """
+    Counts all 'XMAS' that starts at given position in all directions
+    """
     return sum(
         1
         for dir_row, dir_col in directions
